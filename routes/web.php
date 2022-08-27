@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('loaderio-ffb82307d325843dcb5df330ae437dab.txt', function () {
+    return view('welcome');
+});
