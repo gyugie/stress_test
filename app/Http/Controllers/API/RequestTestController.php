@@ -19,7 +19,7 @@ class RequestTestController extends Controller
     public function __invoke(Request $request)
     {
         try {
-            $sleep_time = (new RandomProcessSleepAction())->run();
+            $sleep_time = (new RandomProcessSleepAction())->run(1,15, 1);
             ProcessingTestCpuJob::dispatch();
             Log::info( "RequestTestController send response with  ($sleep_time) seconds");
             return response()->json(['sleep_time' => $sleep_time ]);
