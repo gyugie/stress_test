@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('loaderio-ffb82307d325843dcb5df330ae437dab.txt', function () {
-    return view('welcome');
+    return "loaderio-ffb82307d325843dcb5df330ae437dab";
 });
