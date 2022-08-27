@@ -18,4 +18,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('make/stress', \App\Http\Controllers\API\RequestTestController::class);
+Route::post('make/stress', \App\Http\Controllers\API\RequestTestController::class);
